@@ -64,12 +64,6 @@
 .font-btn{
     font-size: 20px;
 }
-.icon-btn{
-    float: right;
-    height: 100%;
-    width: 15%;
-    background: #D6502C;
-}
 .btn-red {
     background: #fd7c59;
     border: 1px solid #c7583a;
@@ -77,4 +71,10 @@
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
+}
+.elemento{
+    float: right;
+    height: 50px;
+    width: 15%;
+    background: #D6502C;
 }
