@@ -39,7 +39,7 @@
                       <div class="ext-alert hidden-sm hidden-xs">
                         <div class="alerta alerta-amarelo">
                           <img src="{{ asset('/images/chrome.png') }}" style="width: 24px">
-                          <a>Instale a extensão do SorteioGram para carregar mais rápido.<ul>Clique aqui. </ul>  </a>
+                          <a>Instale a extensão do SorteioGram para carregar mais rápido.<u>Clique aqui.</u>  </a>
                         </div>
                       </div>
                   </div>

@@ -50,7 +50,7 @@
     border-radius: .25rem;
     margin-top: 1rem;
     width: 94%;
-    line-height: 24px;
+    font-size: clamp(1em, 0.1em + 1vw, 1.1em);
 }
 .alerta-amarelo {
     color: #856404;
