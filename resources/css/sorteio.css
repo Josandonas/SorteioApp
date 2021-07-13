@@ -1,21 +1,10 @@
+* {
+    margin:0;
+    padding:0;
+}
 .html{
     margin: 0 !important;
     padding: 0 !important;
-}
-/* .body-content{
-  } **/
-.card-title {
-    
-    font-size: 24px;
-    text-align: center;
-    color: #8a8a8a;
-    font-weight: 300;
-    text-overflow: ellipsis;
-}
-.links{
-    color: #fff;
-    opacity: .7;
-    text-decoration: none;
 }
 .body {
     min-height: 100vh;
@@ -25,18 +14,27 @@
     box-sizing: border-box;
     font-family: sans-serif;
   }
-  
+/* titulo do card principal */
+.card-title {
+    font-size: 24px;
+    text-align: center;
+    color: #8a8a8a;
+    font-weight: 300;
+    text-overflow: ellipsis;
+}
+/* cores dos links que se econtram no footer */
+.links{
+    color: #fff;
+    opacity: .7;
+    text-decoration: none;
+}
+/* mantendo o footer fixado na base e mantendo-o responsivo*/
 .footer {
     position: absolute;
     bottom: 0;
     height: 100px;
 }
-
-* {
-    margin:0;
-    padding:0;
-}
-
+ /* Aqui onde começo a deixar o botão de extensao do chrome visivel e permanente */
 .alerta {
     font-size: 1rem;
     font-weight: 400;
@@ -56,4 +54,27 @@
     color: #856404;
     background-color: #fff3cd;
     border-color: #ffeeba;
+}
+/* fim do link para acuplar a extensao do google */
+
+
+.box{
+    width: 93%; 
+}
+.font-btn{
+    font-size: 20px;
+}
+.icon-btn{
+    float: right;
+    height: 100%;
+    width: 15%;
+    background: #D6502C;
+}
+.btn-red {
+    background: #fd7c59;
+    border: 1px solid #c7583a;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
 }

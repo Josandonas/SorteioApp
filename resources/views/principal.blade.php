@@ -36,12 +36,13 @@
               <div class="card"> 
                   <div class="card-header"> <h1 class="card-title">Sorteio no Instragram</h1></div>
                   <div class="card-body"> 
-                      <div class="ext-alert hidden-sm hidden-xs">
-                        <div class="alerta alerta-amarelo">
-                          <img src="{{ asset('/images/chrome.png') }}" style="width: 24px">
-                          <a>Instale a extensão do SorteioGram para carregar mais rápido.<u>Clique aqui.</u>  </a>
-                        </div>
+                      <div class="alerta alerta-amarelo">
+                        <img src="{{ asset('/images/chrome.png') }}" style="width: 24px">
+                        <a>Instale a extensão do SorteioGram para carregar mais rápido.<u>Clique aqui.</u>  </a>
                       </div>
+                        <div class="box btn-red font-btn">
+                          <div align="left">&nbsp; Realizar Sorteio <i class="icofont-group icon-btn"></i></div>
+                        </div>
                   </div>
               </div>
           </div>
