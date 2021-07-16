@@ -26,7 +26,7 @@
                     <a class="nav-link active" href="#"><i class="icofont-envelope"></i> Fale Conosco</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="icofont-plugin"></i> Instalar extensão</a>
+                    <a class="nav-link active" href="#"><i class="icofont-puzzle"></i> Instalar extensão</a>
                   </li>
                 </ul>
               </div>
@@ -40,13 +40,55 @@
                         <img src="{{ asset('/images/chrome.png') }}" style="width: 24px">
                         <a>Instale a extensão do SorteioGram para carregar mais rápido.<u>Clique aqui.</u>  </a>
                       </div>
-                        <div class="box btn-red">
-                            <button type="button" class="btn btn-lg btn-block text-white font-btn" style="width: 80%; text-align:left;">&nbsp; Realizar Sorteio </button> <i class="icofont-group icofont-3x elemento"></i>
-                        </div>
+                      <div class="box btn-red">
+                          <button type="button" class="btn btn-lg btn-block text-white font-btn" style="width: 80%; text-align:left;">&nbsp; Realizar Sorteio </button> <i class="icofont-group icofont-3x elemento-orange"></i>
+                      </div>
+                      <div class="box btn-blue mt-2">
+                        <button type="button" class="btn btn-lg btn-block text-white font-btn" style="width: 80%; text-align:left;">&nbsp; Tutorial: Como fazer um Sorteio no Instagram </button> <i class="icofont-youtube-play icofont-3x elemento-blue"></i>
+                    </div>
                   </div>
               </div>
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 -3">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
-          <footer class="mt-auto mt-3 text-white" style="background: #232323">
+          <br>
+          <footer class="mt-auto text-white" style="background: #232323;">
             <div class="container-fluid py-4">
                 <div class="row justify-content-center">
                   <div class="col-6 col-lg-4 mb-3">

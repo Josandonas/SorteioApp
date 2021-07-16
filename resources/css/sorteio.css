@@ -47,7 +47,7 @@
     border: 1px solid transparent;
     border-radius: .25rem;
     margin-top: 1rem;
-    width: 94%;
+    width: 99%;
     font-size: clamp(1em, 0.1em + 1vw, 1.1em);
 }
 .alerta-amarelo {
@@ -59,7 +59,7 @@
 
 
 .box{
-    width: 93%; 
+    width: 99%; 
 }
 .font-btn{
     font-size: 20px;
@@ -72,9 +72,23 @@
     text-align: center;
     cursor: pointer;
 }
-.elemento{
+.elemento-orange{
     float: right;
     height: 50px;
     width: 15%;
     background: #D6502C;
+}
+.btn-blue {
+    background: #587390;
+    border: 1px solid #304861;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+.elemento-blue{
+    float: right;
+    height: 50px;
+    width: 15%;
+    background: #586e90;
 }
