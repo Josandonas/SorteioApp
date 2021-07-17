@@ -58,7 +58,15 @@
                       <p class="card-text">Você sabe como realizar um sorteio gratuitamente no Sorteiogram? 🤨</p>
                     </div>
                     <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                      <div class="row">
+                        <div class="col-2">
+                          <img src="{{ asset('/images/perfil.png') }}" class="rounded" alt="icone de perfil">
+                        </div>
+                        <div  class="col-9">
+                          <div style="font-size: 12px;">Douglas</div>
+                          <div class="text-muted" style="font-size: 12px;">Maio 7, 2021 - 25 seg leitura</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -70,7 +78,15 @@
                       <p class="card-text">Se você chegou até aqui, provavelmente deve ter algumas dúvidas.</p>
                     </div>
                     <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                      <div class="row">
+                        <div class="col-2">
+                          <img src="{{ asset('/images/perfil.png') }}" class="rounded" alt="icone de perfil">
+                        </div>
+                        <div  class="col-9">
+                          <div style="font-size: 12px;">Douglas</div>
+                          <div class="text-muted" style="font-size: 12px;">Maio 7, 2021 - 1 min leitura</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -82,11 +98,21 @@
                       <p class="card-text">Você não está conseguindo carregar as suas publicações, ou carregar seus comentários?</p>
                     </div>
                     <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                      <div class="row">
+                        <div class="col-2">
+                          <img src="{{ asset('/images/perfil.png') }}" class="rounded" alt="icone de perfil">
+                        </div>
+                        <div  class="col-9">
+                          <div style="font-size: 12px;">Douglas</div>
+                          <div class="text-muted" style="font-size: 12px;">Maio 7, 2021 - 1 min leitura</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <br>
+              <img src="{{ asset('/images/banner.png') }}" class="img-fluid" alt="Conheça ferramenta que vai turbinar seu instagram">
           </div>
           <br>
           <footer class="mt-auto text-white" style="background: #232323;">

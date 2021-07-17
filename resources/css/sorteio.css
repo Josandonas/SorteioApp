@@ -114,3 +114,10 @@
     font-size: 17px;
     text-align: -webkit-match-parent;
 }
+
+.rounded {
+    border-radius: 3.25rem !important;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
