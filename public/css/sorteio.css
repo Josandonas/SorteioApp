@@ -13,7 +13,8 @@
     padding-bottom: 100px; 
     box-sizing: border-box;
     font-family: sans-serif;
-  }
+}
+
 /* titulo do card principal */
 .card-title {
     font-size: 24px;
@@ -22,19 +23,22 @@
     font-weight: 300;
     text-overflow: ellipsis;
 }
-/* cores dos links que se econtram no footer */
+
+/* cores dos links que do footer */
 .links{
     color: #fff;
     opacity: .7;
     text-decoration: none;
 }
-/* mantendo o footer fixado na base e mantendo-o responsivo*/
+
+/*footer fixado na base e mantendo-o responsivo*/
 .footer {
     position: absolute;
     bottom: 0;
     height: 100px;
 }
- /* Aqui onde começo a deixar o botão de extensao do chrome visivel e permanente */
+
+ /* botao de extensao do chrome visivel e permanente */
 .alerta {
     font-size: 1rem;
     font-weight: 400;
@@ -50,20 +54,24 @@
     width: 99%;
     font-size: clamp(1em, 0.1em + 1vw, 1.1em);
 }
+/* defino a cor de fundo e a borda */
 .alerta-amarelo {
     color: #856404;
     background-color: #fff3cd;
     border-color: #ffeeba;
 }
-/* fim do link para acuplar a extensao do google */
 
-
+/* caixa que cobre os botoes */
 .box{
     width: 99%; 
 }
+
+/* tamanho da fonte dos botoes */
 .font-btn{
     font-size: 20px;
 }
+
+/* botao laranjado e alteracao do comportamento do mouse */
 .btn-red {
     background: #fd7c59;
     border: 1px solid #c7583a;
@@ -72,12 +80,16 @@
     text-align: center;
     cursor: pointer;
 }
+
+/* direcao onde o icone se fixa e a cor de fundo  */
 .elemento-orange{
     float: right;
     height: 50px;
     width: 15%;
     background: #D6502C;
 }
+
+/* botao azul e alteracao do comportamento do mouse */
 .btn-blue {
     background: #587390;
     border: 1px solid #304861;
@@ -86,9 +98,20 @@
     text-align: center;
     cursor: pointer;
 }
+
+/* icone do botao azul e seu fundo */
 .elemento-blue{
     float: right;
     height: 50px;
     width: 15%;
     background: #586e90;
 }
+
+.group{
+    color: black;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    text-align: -webkit-match-parent;
+}
+

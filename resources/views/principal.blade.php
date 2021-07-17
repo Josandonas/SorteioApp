@@ -51,10 +51,11 @@
               <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 -3">
                 <div class="col">
                   <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{{ asset('/images/gratis.jpg') }}" class="card-img-top" alt="Como realizar um sorteio gratis">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title group">Como fazer sorteio grátis?</h5>
+                      <br>
+                      <p class="card-text">Você sabe como realizar um sorteio gratuitamente no Sorteiogram? 🤨</p>
                     </div>
                     <div class="card-footer">
                       <small class="text-muted">Last updated 3 mins ago</small>
@@ -63,10 +64,10 @@
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{{ asset('/images/ellen.png') }}" class="card-img-top" alt="Porque vincular o instagram ao Facebook?">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      <h5 class="card-title group">Por que vincular o Instagram ao Facebook?</h5>
+                      <p class="card-text">Se você chegou até aqui, provavelmente deve ter algumas dúvidas.</p>
                     </div>
                     <div class="card-footer">
                       <small class="text-muted">Last updated 3 mins ago</small>
@@ -75,10 +76,10 @@
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{{ asset('/images/demora.jpg') }}" class="card-img-top" alt="Porque meu sorteio está demorando tanto?">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      <h5 class="card-title group"> Sorteio está demorando para carregar, o que eu faço?</h5>
+                      <p class="card-text">Você não está conseguindo carregar as suas publicações, ou carregar seus comentários?</p>
                     </div>
                     <div class="card-footer">
                       <small class="text-muted">Last updated 3 mins ago</small>
