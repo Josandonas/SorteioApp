@@ -13,6 +13,9 @@ class PrincipalController extends Controller{
     public function index(){
         return view('principal');
     }
+    public function SorteioNumero(){
+        // return view('principal');
+    }
     // public function create(){
     // }
     // public function store(Request $request){
