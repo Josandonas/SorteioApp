@@ -107,7 +107,8 @@
     background: #586e90;
 }
 
-.group{
+/* fonte do fotter dos cards */
+.fonte-footer-cards{
     color: black;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
@@ -115,9 +116,17 @@
     text-align: -webkit-match-parent;
 }
 
+/* aredondamento do icon de perfil card publicacao*/
 .rounded {
     border-radius: 3.25rem !important;
     width: 35px;
     height: 35px;
     margin-right: 10px;
+}
+
+/* botoes do cad sorteador */
+.btn-sorteador{
+    border: 1px solid #fd7c59;
+    background: #fd7c59;
+    font-size: 20px;
 }

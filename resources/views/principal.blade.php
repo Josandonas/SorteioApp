@@ -34,7 +34,7 @@
           </nav>
           <div class="container mt-5 col-8">
               <div class="card"> 
-                  <div class="card-header"> <h1 class="card-title">Sorteio no Instragram</h1></div>
+                  <div class="card-header"> <h1 class="card-title">Sorteio no Instragram <i class="icofont-instagram"></i></h1></div>
                   <div class="card-body"> 
                       <div class="alerta alerta-amarelo">
                         <img src="{{ asset('/images/chrome.png') }}" style="width: 24px">
@@ -45,8 +45,79 @@
                       </div>
                       <div class="box btn-blue mt-2">
                         <button type="button" class="btn btn-lg btn-block text-white font-btn" style="width: 80%; text-align:left;">&nbsp; Tutorial: Como fazer um Sorteio no Instagram </button> <i class="icofont-youtube-play icofont-3x elemento-blue"></i>
+                      </div>                   
+                  </div>
+              </div>
+              <div class="card mt-4">
+                <div class="card-header"> <h1 class="card-title">Sorteador Relâmpago <i class="icofont-thunder-light"></i></h1></div>
+                <div class="card-body">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="{{ asset('/images/names.jpg') }}" class="card-img-top" alt="Porque vincular o instagram ao Facebook?">
+                        <div class="card-body">
+                          <h5 class="card-title">Sorteio de Nomes</h5>
+                          <p class="card-text">Que tal realizar um sorteio de nomes rápido?</p>
+                        </div>
+                        <div class="card-footer">
+                          <button style="width: 100%" type="button" class="btn btn-lg text-white btn-sorteador" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Sortear <i class="icofont-abc icofont-2x"></i>
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  ...
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="{{ asset('/images/numbers.jpg') }}" class="card-img-top" alt="Porque vincular o instagram ao Facebook?">
+                        <div class="card-body">
+                          <h5 class="card-title">Sorteio de Números</h5>
+                          <p class="card-text">Que tal realizar um sorteio de números rápido?</p>
+                        </div>
+                        <div class="card-footer">
+                          <button style="width: 100%" type="button" class="btn btn-lg text-white btn-sorteador" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Sortear <i class="icofont-substitute icofont-2x"></i>
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  ...
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                </div>
               </div>
               <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 -3">
                 <div class="col">
@@ -111,8 +182,7 @@
                   </div>
                 </div>
               </div>
-              <br>
-              <img src="{{ asset('/images/banner.png') }}" class="img-fluid" alt="Conheça ferramenta que vai turbinar seu instagram">
+              <img src="{{ asset('/images/banner.png') }}" class="img-fluid mt-3" alt="Conheça ferramenta que vai turbinar seu instagram">
           </div>
           <br>
           <footer class="mt-auto text-white" style="background: #232323;">
