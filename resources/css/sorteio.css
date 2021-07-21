@@ -129,4 +129,14 @@
     border: 1px solid #fd7c59;
     background: #fd7c59;
     font-size: 20px;
+    border-radius: 0.1rem;
+}
+
+/* bordas quadradas nos botões */
+.btn-modal{
+    border-radius: 0.1rem;
+}
+
+.btn-modal-fotter{
+    justify-content: center;
 }
