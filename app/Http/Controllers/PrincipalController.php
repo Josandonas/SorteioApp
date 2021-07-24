@@ -20,15 +20,20 @@ class PrincipalController extends Controller{
         $numeros = array_map(function($value){
             return str_pad($value, 2, '0', STR_PAD_LEFT);   
         }, $numeros);
-        // criar um vetor que absorva o resultado 
-        return implode(", ",$numeros);
+
+        $resultadoNumero=implode(", ",$numeros);
+         
+        return view('principal',compact('resultadoNumero'))->with('success', 'Sorteio Realizado Com Sucesso');
     }
     // public function sorteioNome(){
 
     // }
     public function index(){       
-        return view('principal');
+        $resultadoNumero=null;
+        return view('principal',compact('resultadoNumero'));
     }
+
+
     // public function create(){
     // }
     // public function store(Request $request){

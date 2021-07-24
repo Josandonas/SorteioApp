@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 * {
     margin:0;
     padding:0;
@@ -136,7 +137,11 @@
 .btn-modal{
     border-radius: 0.1rem;
 }
-
+/* mantem os botões no centro do footer dos cards responsaveis pelos sorteios */
 .btn-modal-fotter{
     justify-content: center;
+}
+.resultado{
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
 }

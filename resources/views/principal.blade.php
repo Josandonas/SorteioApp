@@ -51,133 +51,150 @@
               <div class="card mt-4">
                 <div class="card-header"> <h1 class="card-title">Sorteador Relâmpago <i class="icofont-thunder-light"></i></h1></div>
                 <div class="card-body">
-                  <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="{{ asset('/images/names.jpg') }}" class="card-img-top" alt="Porque vincular o instagram ao Facebook?">
-                        <div class="card-body">
-                          <h5 class="card-title">Sorteio de Nomes</h5>
-                          <p class="card-text">Que tal realizar um sorteio de nomes rápido?</p>
-                          <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                                  Saiba Mais <i class="icofont-info-circle"></i>
-                                </button>
-                              </h2>
-                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  <strong>Intruções:</strong>
-                                  <ol class="list-group list-group-numbered">
-                                    <li class="list-group-item">Informe quantos nomes você quer no resultado do sorteio. Exemplo: 2</li>
-                                    <li class="list-group-item">Insira os nomes que você quer sortear separando por vírgula.</li>
-                                    <li class="list-group-item">Clique em <strong>Realizar Sorteio</strong>. Pronto!</li>
-                                  </ol>
+                  @if ($message = Session::get('success'))
+                      <div>
+                          <h5>{{ $message }}</h5>
+                      </div>
+                  @endif
+                  @if($resultadoNumero == null)
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                      <div class="col">
+                        <div class="card h-100">
+                          <img src="{{ asset('/images/names.jpg') }}" class="card-img-top" alt="Porque vincular o instagram ao Facebook?">
+                          <div class="card-body">
+                            <h5 class="card-title">Sorteio de Nomes</h5>
+                            <p class="card-text">Que tal realizar um sorteio de nomes rápido?</p>
+                            <div class="accordion" id="accordionExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                    Saiba Mais <i class="icofont-info-circle"></i>
+                                  </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong>Intruções:</strong>
+                                    <ol class="list-group list-group-numbered">
+                                      <li class="list-group-item">Informe quantos nomes você quer no resultado do sorteio. Exemplo: 2</li>
+                                      <li class="list-group-item">Insira os nomes que você quer sortear separando por vírgula.</li>
+                                      <li class="list-group-item">Clique em <strong>Realizar Sorteio</strong>. Pronto!</li>
+                                    </ol>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="card-footer">
-                          <button style="width: 100%" type="button" class="btn btn-lg text-white btn-sorteador" data-bs-toggle="modal" data-bs-target="#modalNome">
-                            Sortear <i class="icofont-abc icofont-2x"></i>
-                          </button>
-                          <!-- Modal -->
-                          <div class="modal fade" id="modalNome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                              <div class="modal-content">
-                                <div class="modal-header text-white" style="background-color: #fd7c59">
-                                  <h5 class="modal-title" id="modalNome">Sorteio de Nomes <i class="icofont-abc icofont-1x"></i></h5>
-                                  <button type="button" data-bs-dismiss="modal" class="btn btn-modal"><i class="icofont-close icofont-2x text-white"></i></button>
-                                </div>
-                                <div class="modal-body" style="background-color: #c6d9f0;">
-                                  <div class="mb-3">
-                                    <div class="mb-3">
-                                      <label for="formGroupExampleInput" class="form-label">Digite a quantidade de resultados:</label>
-                                      <input required="required" pattern="[[^:;.!?+-%$#@]]" type="number" class="form-control" id="formGroupExampleInput" min="0" placeholder="1">
-                                    </div>
-                                    <label for="exampleFormControlTextarea1" class="form-label">Digite os nomes separando por vírgula: </label>
-                                    <textarea required="required" type="text" pattern="[[a-zA-Záãâéêíîóôõú\s]+$[^:;.!?][^0-9]]" class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Exemplos: Fulano, Cicrano, assim por diante..." ></textarea>
+                          <div class="card-footer">
+                            <button style="width: 100%" type="button" class="btn btn-lg text-white btn-sorteador" data-bs-toggle="modal" data-bs-target="#modalNome">
+                              Sortear <i class="icofont-abc icofont-2x"></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalNome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header text-white" style="background-color: #fd7c59">
+                                    <h5 class="modal-title" id="modalNome">Sorteio de Nomes <i class="icofont-abc icofont-1x"></i></h5>
+                                    <button type="button" data-bs-dismiss="modal" class="btn btn-modal"><i class="icofont-close icofont-2x text-white"></i></button>
                                   </div>
-                                </div>
-                                <div class="modal-footer btn-modal-fotter" >
-                                    <button type="button" class="btn btn-lg btn-modal text-white" style="background-color: #fd7c59; width: 100%;">Realizar Sorteio <i class="icofont-tick-mark"></i></button>
+                                  <div class="modal-body" style="background-color: #c6d9f0;">
+                                    <div class="mb-3">
+                                      <div class="mb-3">
+                                        <label for="formGroupExampleInput" class="form-label">Digite a quantidade de resultados:</label>
+                                        <input required="required" pattern="[[^:;.!?+-%$#@]]" type="number" class="form-control" id="formGroupExampleInput" min="0" placeholder="1">
+                                      </div>
+                                      <label for="exampleFormControlTextarea1" class="form-label">Digite os nomes separando por vírgula: </label>
+                                      <textarea required="required" type="text" pattern="[[a-zA-Záãâéêíîóôõú\s]+$[^:;.!?][^0-9]]" class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Exemplos: Fulano, Cicrano, assim por diante..." ></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer btn-modal-fotter" >
+                                      <button type="button" class="btn btn-lg btn-modal text-white" style="background-color: #fd7c59; width: 100%;">Realizar Sorteio <i class="icofont-tick-mark"></i></button>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="{{ asset('/images/numbers.jpg') }}" class="card-img-top" alt="Porque vincular o instagram ao Facebook?">
-                        <div class="card-body">
-                          <h5 class="card-title">Sorteio de Números</h5>
-                          <p class="card-text">Que tal realizar um sorteio de números rápido?</p>
-                          <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  Saiba Mais <i class="icofont-info-circle"></i>
-                                </button>
-                              </h2>
-                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  <strong>Intruções:</strong>
-                                  <ol class="list-group list-group-numbered">
-                                    <li class="list-group-item">Informe quantos números você quer no resultado do sorteio. Exemplo: 3</li>
-                                    <li class="list-group-item">Preencha qual o intervalo deve ser sorteado. Exemplo: Entre 1 e termina em 100</li>
-                                    <li class="list-group-item">Clique em <strong>Realizar Sorteio</strong>. Pronto!</li>
-                                  </ol>
+                      <div class="col">
+                        <div class="card h-100">
+                          <img src="{{ asset('/images/numbers.jpg') }}" class="card-img-top" alt="Porque vincular o instagram ao Facebook?">
+                          <div class="card-body">
+                            <h5 class="card-title">Sorteio de Números</h5>
+                            <p class="card-text">Que tal realizar um sorteio de números rápido?</p>
+                            <div class="accordion" id="accordionExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Saiba Mais <i class="icofont-info-circle"></i>
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong>Intruções:</strong>
+                                    <ol class="list-group list-group-numbered">
+                                      <li class="list-group-item">Informe quantos números você quer no resultado do sorteio. Exemplo: 3</li>
+                                      <li class="list-group-item">Preencha qual o intervalo deve ser sorteado. Exemplo: Entre 1 e termina em 100</li>
+                                      <li class="list-group-item">Clique em <strong>Realizar Sorteio</strong>. Pronto!</li>
+                                    </ol>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="card-footer">
-                          <button style="width: 100%" type="button" class="btn btn-lg text-white btn-sorteador" data-bs-toggle="modal" data-bs-target="#modalNumero">
-                            Sortear <i class="icofont-substitute icofont-2x"></i>
-                          </button>
-                          <!-- Modal -->
-                          
-                            <div class="modal fade" id="modalNumero" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog modal-dialog-centered">
-                                <form method="POST" action="/sortNumero" >
-                                  @csrf
-                                  <div class="modal-content">
-                                    <div class="modal-header text-white" style="background-color: #fd7c59">
-                                      <h5 class="modal-title" id="modalNumero">Sorteio de Números <i class="icofont-substitute icofont-1x"></i></h5>
-                                      <button type="button" data-bs-dismiss="modal" class="btn btn-modal"><i class="icofont-close icofont-2x text-white"></i></button>
-                                    </div>
-                                    <div class="modal-body" style="background-color: #c6d9f0;">
-                                      <div class="mb-3">
+                          <div class="card-footer">
+                            <button style="width: 100%" type="button" class="btn btn-lg text-white btn-sorteador" data-bs-toggle="modal" data-bs-target="#modalNumero">
+                              Sortear <i class="icofont-substitute icofont-2x"></i>
+                            </button>
+                            <!-- Modal -->
+                            
+                              <div class="modal fade" id="modalNumero" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <form method="POST" action="/sortNumero" >
+                                    @csrf
+                                    <div class="modal-content">
+                                      <div class="modal-header text-white" style="background-color: #fd7c59">
+                                        <h5 class="modal-title" id="modalNumero">Sorteio de Números <i class="icofont-substitute icofont-1x"></i></h5>
+                                        <button type="button" data-bs-dismiss="modal" class="btn btn-modal"><i class="icofont-close icofont-2x text-white"></i></button>
+                                      </div>
+                                      <div class="modal-body" style="background-color: #c6d9f0;">
                                         <div class="mb-3">
-                                          <label for="formGroupExampleInput" class="form-label">Digite a quantidade de resultados:</label>
-                                          <input name="quantidade" required="required" type="number" class="form-control" min="0" placeholder="1">
-                                        </div>
-                                        <div class="mb-3">
-                                          <label for="formGroupExampleInput" class="form-label">Entre:</label>
-                                          <input name="inicial" required="required" type="number" class="form-control" min="0" placeholder="1">
-                                        </div>
-                                        <div class="mb-3">
-                                          <label for="formGroupExampleInput" class="form-label">e termina em:</label>
-                                          <input name="final" required="required" type="number" class="form-control" min="0" placeholder="1">
+                                          <div class="mb-3">
+                                            <label for="formGroupExampleInput" class="form-label">Digite a quantidade de resultados:</label>
+                                            <input name="quantidade" required="required" type="number" class="form-control" min="1">
+                                          </div>
+                                          <div class="mb-3">
+                                            <label for="formGroupExampleInput" class="form-label">Entre:</label>
+                                            <input name="inicial" required="required" type="number" class="form-control" min="1">
+                                          </div>
+                                          <div class="mb-3">
+                                            <label for="formGroupExampleInput" class="form-label">e termina em:</label>
+                                            <input name="final" required="required" type="number" class="form-control" min="1">
+                                          </div>
                                         </div>
                                       </div>
+                                      <div class="modal-footer btn-modal-fotter" >
+                                          <button type="submit" class="btn btn-lg btn-modal text-white" style="background-color: #fd7c59; width: 100%;">Realizar Sorteio <i class="icofont-tick-mark"></i></button>
+                                      </div>
                                     </div>
-                                    <div class="modal-footer btn-modal-fotter" >
-                                        <button type="submit" class="btn btn-lg btn-modal text-white" style="background-color: #fd7c59; width: 100%;">Realizar Sorteio <i class="icofont-tick-mark"></i></button>
-                                    </div>
-                                  </div>
-                                </form>
+                                  </form>
+                                </div>
                               </div>
-                            </div>
 
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  @else
+                    <div class="card text-center">
+                      <div class="card-header">
+                        <h2><i class="icofont-award"></i> Resultado <i class="icofont-award"></i></h2>
+                      </div>
+                      <div class="card-body">
+                        <h1 class="resultado">{{$resultadoNumero}}</h1>
+                        <a href="/" class="btn btn-sorteador mt-4 text-white">Novo Sorteio <i class="icofont-ui-reply"></i></a>
+                      </div>
+                    </div>
+                  @endif
                 </div>
               </div>
               <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 -3">
