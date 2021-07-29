@@ -61,7 +61,11 @@
     background-color: #fff3cd;
     border-color: #ffeeba;
 }
-
+/* letras pequenas que ficam ao lado do icone do chrome */
+.letras-chrome{
+    text-decoration:none;
+    color: #856404;
+}
 /* caixa que cobre os botoes */
 .box{
     width: 99%; 
@@ -70,6 +74,7 @@
 /* tamanho da fonte dos botoes */
 .font-btn{
     font-size: 20px;
+    width: 80%; text-align:left;
 }
 
 /* botao laranjado e alteracao do comportamento do mouse */

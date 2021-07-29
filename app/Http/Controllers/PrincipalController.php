@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use SebastianBergmann\Environment\Console;
 
 class PrincipalController extends Controller{
@@ -14,7 +15,6 @@ class PrincipalController extends Controller{
         $num1=$request->inicial;
         $num2=$request->final;
         $quantidade=$request->quantidade;
-
         $listaDeNumeros = range($num1, $num2);
         $numeros = array_rand(array_flip($listaDeNumeros), $quantidade);
         $numeros = array_map(function($value){
@@ -22,28 +22,33 @@ class PrincipalController extends Controller{
         }, $numeros);
 
         $resultadoNumero=implode(", ",$numeros);
-         
-        return view('principal',compact('resultadoNumero'))->with('success', 'Sorteio Realizado Com Sucesso');
+         return view('principal',compact('resultadoNumero'));
+        // return view('principal',compact('resultadoNumero'))->with('success', 'Sorteio Realizado Com Sucesso');
     }
-    // public function sorteioNome(){
+    public function sorteioNome(Request $request){
+        $quantidade=$request->quantidade;
+        $nomes=explode(',',$request->nomes);
+        $chaves=array_keys($nomes);
+        
+        $numChaves= count($chaves);
 
-    // }
+        $listaChaves = range(0, $numChaves);
+
+        $numeros = array_rand(array_flip($listaChaves), $quantidade);
+        
+        $numeros = array_map(function($value){
+            return str_pad($value,STR_PAD_LEFT);   
+        }, $numeros);
+        $indiceBusca=0;
+        $indiceAux=0;
+        for($indiceBusca=0; ;$indiceBusca++){
+
+        }
+        dd();
+        // array_search — Procura por um valor em um array e retorna sua chave correspondente caso seja encontrado
+    }
     public function index(){       
         $resultadoNumero=null;
         return view('principal',compact('resultadoNumero'));
     }
-
-
-    // public function create(){
-    // }
-    // public function store(Request $request){
-    // }
-    // public function show($id){
-    // }
-    // public function edit($id){
-    // }
-    // public function update(Request $request, $id){
-    // }
-    // public function destroy($id){
-    // }
 }

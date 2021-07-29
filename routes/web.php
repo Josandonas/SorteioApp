@@ -8,6 +8,8 @@ Route::get('/', [PrincipalController::class, 'index']);
 
 Route::post('/sortNumero', [PrincipalController::class,'sorteioNumero']);
 
+Route::post('/sortNome', [PrincipalController::class,'sorteioNome']);
+
 // Auth::routes();
 
 // Route::get('/home', [HomeController::class, 'index']);
