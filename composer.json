@@ -44,18 +44,19 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
-        "post-install-cmd": [
-            "php artisan clear-compiled",
-            "chmod -R 777 public/",
-            "(ps -ocommand= -p $PPID | grep -q no-dev && true) || npm --loglevel silent install",
-            "(ps -ocommand= -p $PPID | grep -q no-dev && true) || npm --loglevel silent install --global bower",
-            "(ps -ocommand= -p $PPID | grep -q no-dev && true) || bower --silent install"
-        ],
         "post-update-cmd": [
             "php artisan clear-compiled",
-            "(ps -ocommand= -p $PPID | grep -q no-dev && true) || npm --loglevel silent update",
-            "(ps -ocommand= -p $PPID | grep -q no-dev && true) || bower --silent update"
-        ]
+            "chmod -R 777 public/",
+            "npm install",
+            "bower install"
+        ],
+        "post-install-cmd": [
+        "php artisan clear-compiled",
+        "php artisan optimize",
+        "npm install --production",
+        "bower install --production"
+    ]
+    
     },
     "extra": {
         "laravel": {
