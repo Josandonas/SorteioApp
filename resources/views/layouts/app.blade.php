@@ -7,19 +7,19 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'SorteioGram') }}</title>
 
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
-        <link href="{{ asset('icons/icofont.css') }}" rel="stylesheet">
+        <script src="{{ secure_asset('js/app.js') }}" defer></script>
+        <link href="{{ secure_asset('icons/icofont.css') }}" rel="stylesheet">
 
         <!-- Fonts -->
         <link rel="dns-prefetch" href="//fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/sorteio.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/sorteio.css') }}" rel="stylesheet">
     </head>
     <body>
     </body>
