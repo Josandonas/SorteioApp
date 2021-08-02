@@ -245,7 +245,7 @@
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <a href="https://sorteiogram.com/blog/meu-sorteio-esta-demorando-para-carregar-o-que-eu-faco/"></a><img src="{{ asset('/images/demora.jpg') }}" class="card-img-top" alt="Porque meu sorteio está demorando tanto?">
+                    <a href="https://sorteiogram.com/blog/meu-sorteio-esta-demorando-para-carregar-o-que-eu-faco/"><img src="{{ asset('/images/demora.jpg') }}" class="card-img-top" alt="Porque meu sorteio está demorando tanto?"></a>
                     <div class="card-body">
                       <h5 class="card-title group"> Sorteio está demorando para carregar, o que eu faço?</h5>
                       <p class="card-text">Você não está conseguindo carregar as suas publicações, ou carregar seus comentários?</p>
