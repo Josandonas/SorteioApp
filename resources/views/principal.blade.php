@@ -206,9 +206,9 @@
                   <div class="card h-100">
                     <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/"><img src="{{ asset('/images/gratis.jpg') }}" class="card-img-top" alt="Como realizar um sorteio gratis"></a>
                     <div class="card-body">
-                      <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/"><h5 class="card-title group">Como fazer sorteio grátis?</h5></a>
+                      <h5 class="card-title group">Como fazer sorteio grátis?</h5>
                       <br>
-                      <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/"><p class="card-text">Você sabe como realizar um sorteio gratuitamente no Sorteiogram? 🤨</p></a>
+                      <p class="card-text">Você sabe como realizar um sorteio gratuitamente no Sorteiogram? 🤨</p>
                     </div>
                     <div class="card-footer">
                       <div class="row">
@@ -216,9 +216,8 @@
                           <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/"><img src="{{ asset('/images/perfil.png') }}" class="rounded" alt="icone de perfil"></a>
                         </div>
                         <div  class="col-9">
-                          <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/">
                           <div style="font-size: 12px;">Douglas</div>
-                          <div class="text-muted" style="font-size: 12px;">Maio 7, 2021 - 25 seg leitura</div></a>
+                          <div class="text-muted" style="font-size: 12px;">Maio 7, 2021 - 25 seg leitura</div>
                         </div>
                       </div>
                     </div>
@@ -226,7 +225,7 @@
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <img src="{{ asset('/images/ellen.png') }}" class="card-img-top" alt="Porque vincular o instagram ao Facebook?">
+                    <a href="https://sorteiogram.com/blog/por-que-vincular-o-instagram-ao-facebook/"><img src="{{ asset('/images/ellen.png') }}" class="card-img-top" alt="Porque vincular o instagram ao Facebook?"></a>
                     <div class="card-body">
                       <h5 class="card-title group">Por que vincular o Instagram ao Facebook?</h5>
                       <p class="card-text">Se você chegou até aqui, provavelmente deve ter algumas dúvidas.</p>
@@ -246,7 +245,7 @@
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <img src="{{ asset('/images/demora.jpg') }}" class="card-img-top" alt="Porque meu sorteio está demorando tanto?">
+                    <a href="https://sorteiogram.com/blog/meu-sorteio-esta-demorando-para-carregar-o-que-eu-faco/"></a><img src="{{ asset('/images/demora.jpg') }}" class="card-img-top" alt="Porque meu sorteio está demorando tanto?">
                     <div class="card-body">
                       <h5 class="card-title group"> Sorteio está demorando para carregar, o que eu faço?</h5>
                       <p class="card-text">Você não está conseguindo carregar as suas publicações, ou carregar seus comentários?</p>
