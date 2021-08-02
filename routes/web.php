@@ -6,7 +6,7 @@ use App\Http\Controllers\PrincipalController;
 
 Route::get('/', [PrincipalController::class, 'index']);
 
-Route::get('/fale',[faleConoscoController::class, 'faleConosco']);
+Route::get('/fale',[PrincipalController::class, 'faleConosco']);
 
 Route::post('/sortNumero', [PrincipalController::class,'sorteioNumero']);
 
