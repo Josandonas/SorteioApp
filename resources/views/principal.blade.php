@@ -264,7 +264,9 @@
                   </div>
                 </div>
               </div>
-              <img src="{{ asset('/images/banner.png') }}" class="img-fluid mt-3" alt="Conheça ferramenta que vai turbinar seu instagram">
+              <a href="https://growsocial.com.br/?ref=ads_sorteiogram.com">
+                <img src="{{ asset('/images/banner.png') }}" class="img-fluid mt-3" alt="Conheça ferramenta que vai turbinar seu instagram">
+              </a>
           </div>
           <br>
           <footer class="mt-auto text-white" style="background: #232323;">
@@ -273,18 +275,18 @@
                   <div class="col-6 col-lg-4 mb-3">
                     <h6 class="text-secondary">Sites parceiros</h6>
                     <ul class="list-unstyled">
-                      <li class="mb-2" ><a href="#" class="links">Mais seguidores no Instagram</a></li>
-                      <li class="mb-2"><a href="#" class="links">Crie seu Link na Bio</a></li>
-                      <li class="mb-2"><a href="#" class="links">Sorteio no Tiktok</a></li>
+                      <li class="mb-2" ><a href="https://growsocial.com.br/?ref=link_sorteiogram.com" class="links">Ganhe mais seguidores no Instagram</a></li>
+                      <li class="mb-2"><a href="https://linkna.bio/?ref=link_sorteiogram.com" class="links">Crie seu Link na Bio</a></li>
+                      <li class="mb-2"><a href="https://sorteiotok.com/?ref=link_sorteiogram.com" class="links">Sorteio no Tiktok</a></li>
                     </ul>
                   </div>
                   <div class="col-6 col-lg-3 mb-3">
                     <h6 class="text-secondary">Mapa do Site</h6>
                     <ul class="list-unstyled">
-                      <li class="mb-2"><a href="#" class="links">Instalar extensão do Google Chrome</a></li>
-                      <li class="mb-2"><a href="#" class="links">Blog</a></li>
-                      <li class="mb-2"><a href="#" class="links">Fale conosco</a></li>
-                      <li class="mb-2"><a href="#" class="links">Video de Como realizar Sorteios no Instagram</a></li>
+                      <li class="mb-2"><a href="https://chrome.google.com/webstore/detail/sorteiogram/gjpkngahkcdfjnelojifgmdjfocdllne" class="links">Instalar extensão do Google Chrome</a></li>
+                      <li class="mb-2"><a href="https://sorteiogram.com/blog/" class="links">Blog</a></li>
+                      <li class="mb-2"><a href="mailto:contato@sorteiogram.com?subject=Contato SorteioGram" class="links">Fale conosco</a></li>
+                      <li class="mb-2"><a href="https://www.youtube.com/watch?v=yZtFjSrHgVU" class="links">Video de Como realizar Sorteios no Instagram</a></li>
                     </ul>
                   </div>
                 </div>
