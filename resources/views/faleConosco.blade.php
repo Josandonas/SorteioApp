@@ -11,7 +11,7 @@
     <body  class="d-flex flex-column min-vh-100" style="background-color: #c6d9f0">
         <nav class="navbar navbar-expand-lg navbar-dark" style="background:#fd7c59;">
             <div class="container-fluid">
-              <a class="navbar-brand" href="/"> <img style="width: 120px" src="{{ asset('/images/sorteiogram.logo.png') }}"></a>
+              <a class="navbar-brand" href="/"> <img style="width: 120px" src="{{ secure_asset('/images/sorteiogram.logo.png') }}"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="icofont-navigation-menu icofont-2x" style="color: white"></i>
               </button>
@@ -21,7 +21,7 @@
                     <a class="nav-link active" href="/"><i class="icofont-instagram"></i> Realizar Sorteio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="icofont-envelope"></i> Fale Conosco</a>
+                    <a class="nav-link active" href="/fale"><i class="icofont-envelope"></i> Fale Conosco</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" href="https://chrome.google.com/webstore/detail/sorteiogram/gjpkngahkcdfjnelojifgmdjfocdllne"><i class="icofont-puzzle"></i> Instalar extensão</a>
@@ -42,7 +42,7 @@
               <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 -3">
                 <div class="col">
                   <div class="card h-100">
-                    <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/"><img src="{{ asset('/images/gratis.jpg') }}" class="card-img-top" alt="Como realizar um sorteio gratis"></a>
+                    <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/"><img src="{{ secure_asset('/images/gratis.jpg') }}" class="card-img-top" alt="Como realizar um sorteio gratis"></a>
                     <div class="card-body">
                       <h5 class="card-title group">Como fazer sorteio grátis?</h5>
                       <br>
@@ -51,7 +51,7 @@
                     <div class="card-footer">
                       <div class="row">
                         <div class="col-2">
-                          <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/"><img src="{{ asset('/images/perfil.png') }}" class="rounded" alt="icone de perfil"></a>
+                          <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/"><img src="{{ secure_asset('/images/perfil.png') }}" class="rounded" alt="icone de perfil"></a>
                         </div>
                         <div  class="col-9">
                           <div style="font-size: 12px;">Douglas</div>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <a href="https://sorteiogram.com/blog/por-que-vincular-o-instagram-ao-facebook/"><img src="{{ asset('/images/ellen.png') }}" class="card-img-top" alt="Porque vincular o instagram ao Facebook?"></a>
+                    <a href="https://sorteiogram.com/blog/por-que-vincular-o-instagram-ao-facebook/"><img src="{{ secure_asset('/images/ellen.png') }}" class="card-img-top" alt="Porque vincular o instagram ao Facebook?"></a>
                     <div class="card-body">
                       <h5 class="card-title group">Por que vincular o Instagram ao Facebook?</h5>
                       <p class="card-text">Se você chegou até aqui, provavelmente deve ter algumas dúvidas.</p>
@@ -71,7 +71,7 @@
                     <div class="card-footer">
                       <div class="row">
                         <div class="col-2">
-                          <img src="{{ asset('/images/perfil.png') }}" class="rounded" alt="icone de perfil">
+                          <img src="{{ secure_asset('/images/perfil.png') }}" class="rounded" alt="icone de perfil">
                         </div>
                         <div  class="col-9">
                           <div style="font-size: 12px;">Douglas</div>
@@ -83,7 +83,7 @@
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <a href="https://sorteiogram.com/blog/meu-sorteio-esta-demorando-para-carregar-o-que-eu-faco/"><img src="{{ asset('/images/demora.jpg') }}" class="card-img-top" alt="Porque meu sorteio está demorando tanto?"></a>
+                    <a href="https://sorteiogram.com/blog/meu-sorteio-esta-demorando-para-carregar-o-que-eu-faco/"><img src="{{ secure_asset('/images/demora.jpg') }}" class="card-img-top" alt="Porque meu sorteio está demorando tanto?"></a>
                     <div class="card-body">
                       <h5 class="card-title group"> Sorteio está demorando para carregar, o que eu faço?</h5>
                       <p class="card-text">Você não está conseguindo carregar as suas publicações, ou carregar seus comentários?</p>
@@ -91,7 +91,7 @@
                     <div class="card-footer">
                       <div class="row">
                         <div class="col-2">
-                          <img src="{{ asset('/images/perfil.png') }}" class="rounded" alt="icone de perfil">
+                          <img src="{{ secure_asset('/images/perfil.png') }}" class="rounded" alt="icone de perfil">
                         </div>
                         <div  class="col-9">
                           <div style="font-size: 12px;">Douglas</div>
@@ -103,7 +103,7 @@
                 </div>
               </div>
               <a href="https://growsocial.com.br/?ref=ads_sorteiogram.com">
-                <img src="{{ asset('/images/banner.png') }}" class="img-fluid mt-3" alt="Conheça ferramenta que vai turbinar seu instagram">
+                <img src="{{ secure_asset('/images/banner.png') }}" class="img-fluid mt-3" alt="Conheça ferramenta que vai turbinar seu instagram">
               </a>
           </div>
           <br>
