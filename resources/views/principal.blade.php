@@ -204,20 +204,21 @@
               <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 -3">
                 <div class="col">
                   <div class="card h-100">
-                    <img src="{{ asset('/images/gratis.jpg') }}" class="card-img-top" alt="Como realizar um sorteio gratis">
+                    <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/"><img src="{{ asset('/images/gratis.jpg') }}" class="card-img-top" alt="Como realizar um sorteio gratis"></a>
                     <div class="card-body">
-                      <h5 class="card-title group">Como fazer sorteio grátis?</h5>
+                      <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/"><h5 class="card-title group">Como fazer sorteio grátis?</h5></a>
                       <br>
-                      <p class="card-text">Você sabe como realizar um sorteio gratuitamente no Sorteiogram? 🤨</p>
+                      <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/"><p class="card-text">Você sabe como realizar um sorteio gratuitamente no Sorteiogram? 🤨</p></a>
                     </div>
                     <div class="card-footer">
                       <div class="row">
                         <div class="col-2">
-                          <img src="{{ asset('/images/perfil.png') }}" class="rounded" alt="icone de perfil">
+                          <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/"><img src="{{ asset('/images/perfil.png') }}" class="rounded" alt="icone de perfil"></a>
                         </div>
                         <div  class="col-9">
+                          <a href="https://sorteiogram.com/blog/como-fazer-sorteio-gratis/">
                           <div style="font-size: 12px;">Douglas</div>
-                          <div class="text-muted" style="font-size: 12px;">Maio 7, 2021 - 25 seg leitura</div>
+                          <div class="text-muted" style="font-size: 12px;">Maio 7, 2021 - 25 seg leitura</div></a>
                         </div>
                       </div>
                     </div>
