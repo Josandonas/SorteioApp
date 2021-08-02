@@ -21,7 +21,7 @@
                     <a class="nav-link active" href="/"><i class="icofont-instagram"></i> Realizar Sorteio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="icofont-envelope"></i> Fale Conosco</a>
+                    <a class="nav-link active" href="/fale"><i class="icofont-envelope"></i> Fale Conosco</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" href="https://chrome.google.com/webstore/detail/sorteiogram/gjpkngahkcdfjnelojifgmdjfocdllne"><i class="icofont-puzzle"></i> Instalar extensão</a>
