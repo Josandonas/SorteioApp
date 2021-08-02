@@ -51,7 +51,8 @@ class PrincipalController extends Controller{
         $resultadoNumero=null;
         return view('principal',compact('resultadoNumero'));
     }
+    
     public function faleConosco(){
-        return view('fale');
+        return view('faleConosco');
     }
 }
