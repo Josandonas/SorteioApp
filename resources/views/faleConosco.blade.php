@@ -33,8 +33,9 @@
           <div class="container mt-5 col-12">
               <div class="card"> 
                   <div class="card-header"> <h1 class="card-title">Fale Conosco  <i class="icofont-envelope"></i></i></h1></div>
-                  <div class="card-body">   
-                      <b>Entre em contato conosco pelo email: <a href="mailto:contato@sorteiogram.com?subject=Contato SorteioGram">contato@sorteiogram.com</a></b>                 
+                  <div class="card-body text-center">   
+                      <b>Entre em contato conosco pelo email: <a href="mailto:contato@sorteiogram.com?subject=Contato SorteioGram">contato@sorteiogram.com</a></b>             
+                      <br>    
                       <p>Por favor, em caso de algum problema com a plataforma, informe seu Instagram e URL da publicação de sorteio.</p>
                   </div>
               </div>
