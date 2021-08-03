@@ -84,33 +84,6 @@
                           <button style="width: 100%" type="button" class="btn btn-lg text-white btn-sorteador" data-bs-toggle="modal" data-bs-target="#modalNome">
                             Sortear <i class="icofont-abc icofont-2x"></i>
                           </button>
-                          <!-- Modal -->
-                          <div class="modal fade" id="modalNome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                              <form method="POST" action="/sortNome">
-                                @csrf
-                                <div class="modal-content">
-                                  <div class="modal-header text-white" style="background-color: #fd7c59">
-                                    <h5 class="modal-title" id="modalNome">Sorteio de Nomes <i class="icofont-abc icofont-1x"></i></h5>
-                                    <button type="button" data-bs-dismiss="modal" class="btn btn-modal"><i class="icofont-close icofont-2x text-white"></i></button>
-                                  </div>
-                                  <div class="modal-body" style="background-color: #c6d9f0;">
-                                    <div class="mb-3">
-                                      <div class="mb-3">
-                                        <label for="formGroupExampleInput" class="form-label">Digite a quantidade de resultados:</label>
-                                        <input name="quantidade" required="required" type="number" class="form-control" id="formGroupExampleInput" min="0" placeholder="1">
-                                      </div>
-                                      <label for="exampleFormControlTextarea1" class="form-label">Digite os nomes separando por vírgula: </label>
-                                      <textarea name="nomes" required="required" type="text" pattern="[a-zA-Záãâéêíîóôõú\s]+$[^:;.!?][^0-9]" class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Exemplos: Fulano, Cicrano, assim por diante..." ></textarea>
-                                    </div>
-                                  </div>
-                                  <div class="modal-footer btn-modal-fotter" >
-                                    <button type="submit" class="btn btn-lg btn-modal text-white" style="background-color: #fd7c59; width: 100%;">Realizar Sorteio <i class="icofont-tick-mark"></i></button>
-                                  </div>
-                                </div>
-                            </form>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -144,41 +117,6 @@
                           <button style="width: 100%" type="button" class="btn btn-lg text-white btn-sorteador" data-bs-toggle="modal" data-bs-target="#modalNumero">
                             Sortear <i class="icofont-substitute icofont-2x"></i>
                           </button>
-                          <!-- Modal -->
-                          
-                            <div class="modal fade" id="modalNumero" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog modal-dialog-centered">
-                                <form method="POST" action="/sortNumero" >
-                                  @csrf
-                                  <div class="modal-content">
-                                    <div class="modal-header text-white" style="background-color: #fd7c59">
-                                      <h5 class="modal-title" id="modalNumero">Sorteio de Números <i class="icofont-substitute icofont-1x"></i></h5>
-                                      <button type="button" data-bs-dismiss="modal" class="btn btn-modal"><i class="icofont-close icofont-2x text-white"></i></button>
-                                    </div>
-                                    <div class="modal-body" style="background-color: #c6d9f0;">
-                                      <div class="mb-3">
-                                        <div class="mb-3">
-                                          <label for="formGroupExampleInput" class="form-label">Digite a quantidade de resultados:</label>
-                                          <input name="quantidade" required="required" type="number" class="form-control" min="1">
-                                        </div>
-                                        <div class="mb-3">
-                                          <label for="formGroupExampleInput" class="form-label">Entre:</label>
-                                          <input name="inicial" required="required" type="number" class="form-control" min="1">
-                                        </div>
-                                        <div class="mb-3">
-                                          <label for="formGroupExampleInput" class="form-label">e termina em:</label>
-                                          <input name="final" required="required" type="number" class="form-control" min="1">
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="modal-footer btn-modal-fotter" >
-                                        <button type="submit" class="btn btn-lg btn-modal text-white" style="background-color: #fd7c59; width: 100%;">Realizar Sorteio <i class="icofont-tick-mark"></i></button>
-                                    </div>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-
                         </div>
                       </div>
                     </div>
@@ -293,15 +231,90 @@
                 <div class="text-center text-secondary"> Todos os direitos reservados. SorteioGram 2021</div>
               </div>
           </footer>
+          <!-- Modal -->
+                          
+          <div class="modal fade" id="modalNumero" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <form method="POST" action="/sortNumero" >
+                @csrf
+                <div class="modal-content">
+                  <div class="modal-header text-white" style="background-color: #fd7c59">
+                    <h5 class="modal-title" id="modalNumero">Sorteio de Números <i class="icofont-substitute icofont-1x"></i></h5>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-modal"><i class="icofont-close icofont-2x text-white"></i></button>
+                  </div>
+                  <div class="modal-body" style="background-color: #c6d9f0;">
+                    <div class="mb-3">
+                      <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Digite a quantidade de resultados:</label>
+                        <input name="quantidade" required="required" type="number" class="form-control" min="1" placeholder="1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Começa em:</label>
+                        <input name="inicial" required="required" type="number" class="form-control" min="1" placeholder="1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Termina em:</label>
+                        <input name="final" required="required" type="number" class="form-control" min="1" placeholder="100">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer btn-modal-fotter" >
+                      <button type="submit" class="btn btn-lg btn-modal text-white" style="background-color: #fd7c59; width: 100%;">Realizar Sorteio <i class="icofont-tick-mark"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+           <!-- Modal -->
+           <div class="modal fade" id="modalNome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <form method="POST" action="/sortNome">
+                @csrf
+                <div class="modal-content">
+                  <div class="modal-header text-white" style="background-color: #fd7c59">
+                    <h5 class="modal-title" id="modalNome">Sorteio de Nomes <i class="icofont-abc icofont-1x"></i></h5>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-modal"><i class="icofont-close icofont-2x text-white"></i></button>
+                  </div>
+                  <div class="modal-body" style="background-color: #c6d9f0;">
+                    <div class="mb-3">
+                      <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Digite a quantidade de resultados:</label>
+                        <input name="quantidade" required="required" type="number" class="form-control" id="formGroupExampleInput" min="0" placeholder="1">
+                      </div>
+                      <label for="exampleFormControlTextarea1" class="form-label">Digite os nomes separando por vírgula: </label>
+                      <textarea name="nomes" required="required" type="text" class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Exemplos: Fulano, Cicrano, assim por diante..." onkeypress="return ApenasLetras(event,this);"></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer btn-modal-fotter" >
+                    <button type="submit" class="btn btn-lg btn-modal text-white" style="background-color: #fd7c59; width: 100%;">Realizar Sorteio <i class="icofont-tick-mark"></i></button>
+                  </div>
+                </div>
+            </form>
+            </div>
+          </div>
     </body>
-    {{-- <script>
-      var inputNome = document.querySelector("#preco");
-      nome.addEventListener("keypress", function(e) {
-          var keyCode = (e.keyCode ? e.keyCode : e.which);
-
-      if (keyCode > 47 && keyCode < 58) {
-          e.preventDefault();
-      }
-      });
-    </script> --}}
 </html>
+<script>
+  function ApenasLetras(e, t) {
+    try {
+        if (window.event) {
+            var charCode = window.event.keyCode;
+        } else if (e) {
+            var charCode = e.which;
+        } else {
+            return true;
+        }
+        if (
+            (charCode > 64 && charCode < 91) || 
+            (charCode > 96 && charCode < 123) ||
+            (charCode > 191 && charCode <= 255) // letras com acentos
+        ){
+            return true;
+        } else {
+            return false;
+        }
+    } catch (err) {
+        alert(err.Description);
+    }
+  }
+</script>

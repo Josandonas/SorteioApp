@@ -45,6 +45,7 @@ class PrincipalController extends Controller{
 
         }
         dd();
+        // pattern="[a-zA-Záãâéêíîóôõú\s]+$[^:;.!?][^0-9]"
         // array_search — Procura por um valor em um array e retorna sua chave correspondente caso seja encontrado
     }
     public function index(){       
