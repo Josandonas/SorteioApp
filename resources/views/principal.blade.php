@@ -282,7 +282,7 @@
                         <input name="quantidade" required="required" type="number" class="form-control" id="formGroupExampleInput" min="0" placeholder="1">
                       </div>
                       <label for="exampleFormControlTextarea1" class="form-label">Digite os nomes separando por vírgula: </label>
-                      <textarea name="nomes" required="required" type="text" class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Exemplos: Fulano, Cicrano, assim por diante..." onchange="verificar()" ></textarea>
+                      <textarea name="nomes" required="required" type="text" class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Exemplos: Fulano, Cicrano, assim por diante..." onchange="verificar()" id="entrada"></textarea>
                     </div>
                   </div>
                   <div class="modal-footer btn-modal-fotter" >
