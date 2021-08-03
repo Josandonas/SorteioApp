@@ -282,7 +282,7 @@
                         <input name="quantidade" required="required" type="number" class="form-control" id="formGroupExampleInput" min="0" placeholder="1">
                       </div>
                       <label for="exampleFormControlTextarea1" class="form-label">Digite os nomes separando por vírgula: </label>
-                      <textarea name="nomes" required="required" type="text" class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Exemplos: Fulano, Cicrano, assim por diante..." onchange="verificar()" id="entrada"></textarea>
+                      <textarea name="nomes" required="required" type="text" class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Exemplos: Fulano, Cicrano, assim por diante..."></textarea>
                     </div>
                   </div>
                   <div class="modal-footer btn-modal-fotter" >
@@ -294,27 +294,3 @@
           </div>
     </body>
 </html>
-<script>
-function verificar(){
-  var texto=document.getElementById("entrada").value;
-  for (letra of texto){
-    if (!isNaN(texto)){
-        alert("Não digite números");
-        document.getElementById("entrada").value="";
-        return;
-    }
-    letraspermitidas="ABCEDFGHIJKLMNOPQRSTUVXWYZ abcdefghijklmnopqrstuvxwyzáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ,"
-    var ok=false;
-    for (letra2 of letraspermitidas ){
-        if (letra==letra2){
-            ok=true;
-        }
-    }
-    if (!ok){
-      alert("Não digite caracteres que não sejam letras ou espaços");
-      document.getElementById("entrada").value="";
-      return; 
-    }
-  }
-}
-</script>
