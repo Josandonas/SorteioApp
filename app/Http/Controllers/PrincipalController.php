@@ -20,37 +20,26 @@ class PrincipalController extends Controller{
         $numeros = array_map(function($value){
             return str_pad($value, 2, '0', STR_PAD_LEFT);   
         }, $numeros);
-
+        $resultadoNomes=null;
         $resultadoNumero=implode(", ",$numeros);
-         return view('principal',compact('resultadoNumero'));
-        // return view('principal',compact('resultadoNumero'))->with('success', 'Sorteio Realizado Com Sucesso');
+         return view('principal',compact('resultadoNumero','resultadoNomes'));
     }
+
     public function sorteioNome(Request $request){
+        $resultadoNumero=null;
         $quantidade=$request->quantidade;
+        // preg_match_all("~|<[^>]+>(.*)</[^>]+>|U@/s",
+        // $request->nomes, $out, PREG_PATTERN_ORDER);
+        // $out[0][0] . ", " . $out[0][1];
         $nomes=explode(',',$request->nomes);
-        $chaves=array_keys($nomes);
-        
-        $numChaves= count($chaves);
-
-        $listaChaves = range(0, $numChaves);
-
-        $numeros = array_rand(array_flip($listaChaves), $quantidade);
-        
-        $numeros = array_map(function($value){
-            return str_pad($value,STR_PAD_LEFT);   
-        }, $numeros);
-        $indiceBusca=0;
-        $indiceAux=0;
-        for($indiceBusca=0; ;$indiceBusca++){
-
-        }
-        dd();
-        // pattern="[a-zA-Záãâéêíîóôõú\s]+$[^:;.!?][^0-9]"
-        // array_search — Procura por um valor em um array e retorna sua chave correspondente caso seja encontrado
+        $misturaNomes = array_rand(array_flip($nomes), $quantidade);
+        $resultadoNomes=implode(", ",$misturaNomes);
+        return view('principal',compact('resultadoNomes','resultadoNumero'));
     }
     public function index(){       
         $resultadoNumero=null;
-        return view('principal',compact('resultadoNumero'));
+        $resultadoNomes=null;
+        return view('principal',compact('resultadoNumero','resultadoNomes'));
     }
     
     public function faleConosco(){
