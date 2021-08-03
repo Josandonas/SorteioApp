@@ -105,7 +105,7 @@
                                   <strong>Intruções:</strong>
                                   <ol class="list-group list-group-numbered">
                                     <li class="list-group-item">Informe quantos números você quer no resultado do sorteio. Exemplo: 3</li>
-                                    <li class="list-group-item">Preencha qual o intervalo deve ser sorteado. Exemplo: Entre 1 e termina em 100</li>
+                                    <li class="list-group-item">Preencha qual o intervalo deve ser sorteado. Exemplo: Começa em 1 e termina em 100</li>
                                     <li class="list-group-item">Clique em <strong>Realizar Sorteio</strong>. Pronto!</li>
                                   </ol>
                                 </div>
